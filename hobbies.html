@@ -1,0 +1,133 @@
+<!-- 
+
+ITECH2002 Assignment 2 - Personal Website
+Author: Matthew Shell - 30344209
+
+Site Name: Matthew Shell eResume 
+
+-->
+<!DOCTYPE html> 
+<html>		<!-- Hobbies and Interests Page -->
+<head>
+	<title>Hobbies and Interests: Matthew Shell eResume</title>
+	<link href="css\main.css" rel="stylesheet"/>
+	<link href="https://fonts.googleapis.com/css?family=Prosto+One|Roboto:400,500&display=swap" rel="stylesheet">
+	<meta charset="utf-8">
+	
+	<!-- Scripts below for image gallery, taken from Week 9 lab files -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.18/jqueryui.min.js"></script>
+	<script src="slideshow/scripts/jquery.timers-1.2.js"></script>
+	<script src="slideshow/scripts/jquery.easing.1.3.js"></script>
+	<script src="slideshow/scripts/jquery.galleryview-3.0-dev.js"></script>
+	<link rel="stylesheet" href="slideshow/css/jquery.galleryview-3.0-dev.css" />
+	<script type="text/javascript">
+		$(function(){
+		$('#myGallery').galleryView();
+		});
+	</script>
+	
+</head>
+<body>
+	<div id="container">
+	
+		<header>
+			<!-- Image of Site Title with Logo Image - Hyperlink to Home -->
+			<a href="index.html"><img src="images\title.png" title="Matthew Shell eResume" alt="Matthew Shell eResume"></a>
+		</header>
+		
+		<nav>
+			<ul>
+				<li id="navfirst"><a href="index.html">Home</a></li>
+				<li><a href="bio.html">Bio</a></li>
+				<li><a href="summary.html">Skills and Experience</a></li>
+				<li><a href="hobbies.html" class="navcurrent">Hobbies and Interests</a></li>
+				<li id="navlast"><a href="contact.html">Contact Me</a></li>
+			</ul>
+		</nav>
+		
+		<main id="contentarea">
+			
+			<h1>Music</h1>
+			
+			<section>
+				<!-- Picture of me playing guitar -->
+				<img src="images\hobbiesimg1_meguitar.jpg" class="floatleft" title="Photo of me playing guitar on couch" alt="Photo of me playing guitar on couch">
+				
+				
+				<p>
+					Could not imagine a world without music! 
+					<br><br>
+					<b>Play several instruments:</b> drums, guitar, ukelele, keyboard and more.
+					<br><br>
+					Love using a loop pedal to build a whole song from scratch on-the-fly!
+				</p>
+				
+			</section>
+			
+			<h1>Gaming</h1>
+			
+			<section>
+				<!-- Free stock image of gaming controller. Source: https://www.pexels.com/photo/reflection-playstation-pad-gaming-18174/ -->
+				<img src="images\hobbiesimg2_stockcontroller.jpg" class="floatright" title="Picture of gaming controller" alt="Picture of gaming controller">
+				
+				<p>
+					Main hobby growing up, not that my parents would call it a <em>'legitimate hobby'</em>. 
+					<br><br>
+					Never had the reflexes to dominate at FPS but I was dangerous in an STG or RPG.
+					<br><br>
+					Still something I like to do to relax, now also keen to start <b>making my own</b>!
+				</p>
+			</section>
+			
+			<h1>Travel</h1>
+			
+			<section id="travel">
+				<p>
+					Always wanted to travel the world, been overseas a couple of times:
+					<br><br>
+					<b>2014:</b> Solo adventure around the <b>UK &amp Europe</b>. Booked the flight into <b>London</b>, the flight home out
+					of <b>Amsterdam</b>, and <em>nothing else</em>. Made up the details as I went along!
+					<br><br>
+					<b>2018:</b> Went to China for three weeks through Uni as part of 
+					<a href="https://dfat.gov.au/people-to-people/new-colombo-plan/pages/new-colombo-plan.aspx">New Colombo Plan</a> <!-- Link to NCP information page -->
+					program. Two weeks completing unit of study at Shaoguan University, final week touring around Quang Xi province.
+					<br><br>
+					Both incedible learning experiences, cannot wait for my next adventure!
+					<br><br>
+					Here's a selection of <b>photos from my trips:</b>
+					<br><br>
+				</p>
+				
+				<!-- Javascript image gallery of photos from China-->
+				<div id="gallerycontainer">
+					<div class="imageRow">
+						<ul id="myGallery">
+							<li><img src="slideshow/images/china1.jpg" title="NCP Group in China" alt="Group photo after lion dancing lessons in China"></li>
+							<li><img src="slideshow/images/china2.jpg" title="Temple in China" alt="Chinese Bhuddhist Temple"></li>
+							<li><img src="slideshow/images/china3.jpg" title="Me at park in Quan Xi, China" alt="Me posing with a sculpture are a tourist park in China"></li>
+							<li><img src="slideshow/images/china4.jpg" title="Me in China posing with cormorants" alt="Posing with cormorants next to river in Quan Xi province, China"></li>
+							<li><img src="slideshow/images/china5.jpg" title="Glass bridge in China" alt="Glass bridge dissappearing into fog over forest"></li>
+							<li><img src="slideshow/images/china6.jpg" title="Silver Caves in China" alt="stalactites in Silver Caves, China"></li>
+							<li><img src="slideshow/images/china7.jpg" title="Me sitting on bridge in China" alt="Me sitting on bridge in China"></li>
+							<li><img src="slideshow/images/china8.jpg" title="Mountain behind lake, Quan Xi, China" alt="Mountains around lake in China"></li>
+							<li><img src="slideshow/images/europe1.jpg" title="Me posing with guard at British House of Parliament" alt="Me posing with guard at British House of Parliament"></li>
+							<li><img src="slideshow/images/europe2.jpg" title="View from top of Eiffel Tower" alt="Paris city from top of Eiffel Tower"></li>
+							<li><img src="slideshow/images/europe3.jpg" title="Me playing ukelele in Ardglass, Northern Ireland" alt="Playing ukelele while looking out over the ocean"></li>
+							<li><img src="slideshow/images/europe4.jpg" title="Murals on fence in Belfast, Northern Ireland" alt="Murals on fence in Belfast, Northern Ireland"></li>
+							<li><img src="slideshow/images/europe5.jpg" title="Ballyseede Castle in Ireland" alt="Castle Hotel that i stayed at in Ireland"></li>
+							<li><img src="slideshow/images/europe6.jpg" title="Giant's Cuaseway, Northern Ireland" alt="Rock formations at Giant's Causeway in Northern Ireland"></li>
+							<li><img src="slideshow/images/europe7.jpg" title="River in Paris" alt="River in Paris, Eiffel Tower in background"></li>
+						</ul>
+					</div>
+				</div>
+			</section>
+			
+		</main>
+		
+		<footer>
+			<p>&copy; 2019, Matthew Shell</p>
+		</footer>
+	</div>
+</body>
+</html>

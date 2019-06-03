@@ -1,0 +1,412 @@
+/* 
+ITECH 2003 A2 - Website Development
+Author: Matthew Shell - 30344209
+
+This is the main stylesheet for my personal website
+Site name: Matthew Shell eResume
+*/
+
+
+/*		RESET/SETUP			*/
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	background-color: #2A2E33;
+	margin: 0;
+	padding: 0;
+	height: 100%;
+	text-align: center;
+}
+
+#container {
+	min-height: 100%;
+	display: flex;
+}
+
+a {
+	text-decoration: none;
+}
+
+/*			HEADER			*/
+
+header {
+	background-image: linear-gradient(#54AAFF, #2F5F8F);
+	height: auto;
+	width: 100%;
+	text-align: center;
+	padding: .2px;
+	position: fixed;
+	z-index: 2;
+}
+
+/*		NAVIGATION BAR 		*/
+
+nav {
+	background-color: #6289BD;
+	position: fixed;
+	top: 103px;
+	width: 100%;
+	font-family: "Roboto", sans-serif;
+	font-weight: 500;
+	font-size: 1.2em;
+	z-index: 2;
+	border-width: 2px;
+	border-color: #2A2E33;
+	border-style: solid;
+}
+
+nav ul {
+	list-style-type: none;
+	text-align: center;
+	display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin: 1px;
+    padding: 0;
+	z-index: 2;
+}
+
+#navfirst {
+	margin-left: 5%;
+}
+
+#navlast {
+	margin-right: 5%;
+}
+
+.navcurrent {
+	color: #FFF;
+	heigt: auto;
+	background-color: #365781;
+	padding-left: 1em;
+	padding-right: 1em;
+}
+
+nav a {
+	color: #2A2E33;
+	text-decoration: none;
+	height: 1em;
+	transition: all 0.2s linear;
+}
+
+nav a:hover {
+	color: #A9B9CF;
+}
+
+/*	 SECONDARY NAVIGATION	*/
+
+#nav2 {
+	background-color: #A9B9CF;
+	position: fixed;
+	top: 130px;
+	width: 100%;
+	font-family: "Roboto", sans-serif;
+	font-weight: 500;
+	font-size: 1.1em;
+	z-index: 2;
+	border-width: 2px;
+	border-color: #2A2E33;
+	border-style: solid;
+}
+
+#nav2 ul {
+	list-style-type: none;
+	text-align: center;
+	display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin: 1px;
+    padding: 0;
+}
+
+#nav2first {
+	margin-left: 15%;
+}
+
+#nav2last {
+	margin-right: 15%;
+}
+
+#nav2 .navcurrent {
+	color: #FFF;
+	heigt: auto;
+	background-color: #365781;
+	padding-left: 1em;
+	padding-right: 1em;
+}
+
+#nav2 a {
+	color: #2A2E33;
+	text-decoration: none;
+	height: .75em;
+	transition: all 0.2s linear;
+}
+
+#nav2 a:hover {
+	color: #6289BD;
+}
+
+
+/*		 CONTENT AREA 		*/
+
+#contentarea {
+	width: 70%;
+	max-width: 1000px;
+	min-width: 830px; 
+	height: 100%;
+	background-color: rgba(98, 137, 189, 0.65);
+	z-index: 1;
+	position: relative;
+	top: 175px;
+	margin: auto;
+	margin-bottom: 100px;
+	border-radius: 25px;
+	padding: 10px;
+	font-family: "Roboto", sans-serif;
+	font-size: 1.4em;
+	color: #000;
+	line-height: 1.2em;
+}
+
+#contentarea h1 {
+	color: #2A2E33;
+	font-family: "Prosto One", cursive;
+	font-size: 2em;
+	padding-top: 1em;
+	padding-bottom: 1em;
+	clear: both;
+}
+
+#contentarea h2 {
+	color: #2A2E33;
+	font-family: "Prosto One", cursive;
+	font-size: 1.5em;
+	padding-top: 1em;
+	padding-bottom: 1em;
+	text-align: center;
+}
+
+#contentarea section {
+	background-color: #6289BD;
+	padding: 10px;
+	border-radius: 10px;
+	height: 100%;
+	position: relative;
+	text-align: left;
+	overflow: hidden;
+}
+
+#contentarea section p {
+	margin: 10px;
+}
+
+#contentarea section p b {
+	letter-spacing: .07em;
+}
+
+.floatleft, .floatright {
+	width: 40%;
+	border-radius: 10px; 
+}
+
+.floatleft {
+	float: left;
+	margin: 0 10px 10px 0;
+}
+
+.floatright {
+	float: right;
+	margin: 0 0 10px 10px;
+
+}
+
+#small {
+	width: 200px;
+}
+
+ul {
+	position: relative;
+	overflow: hidden;
+	padding: 15px 5px 20px 25px;
+}
+
+#summaryblurb {
+	width: 90%;
+	background-color: #A9B9CF;
+	opacity: 0.75;
+	border-radius: 25px;
+	margin: auto;
+	padding: 5px;
+}
+
+/*			FOOTER			*/
+
+footer {
+	position: fixed;
+	bottom: 0px;
+	width: 100%;
+	height: 1.5em;   /* Height of the footer */
+	background: #6289BD;
+	margin-top: auto;
+	text-align: left;
+	z-index: 2;
+	border-width: 2px;
+	border-color: #2A2E33;
+	border-style: solid
+	
+}
+
+footer > p {
+	font-family: "Roboto", sans-serif;
+	font-weight: 400;
+	font-size: 1em;
+	color: #2A2E33;
+	margin: 0;
+	margin-top: 2px;
+	padding: 0;
+	padding-left: 2%;
+}
+
+
+/*      	HOME			*/
+
+#home {
+	background-image: url("../images/background.jpg"); /*Image Source: https://pixabay.com/illustrations/abstract-lines-numbering-system-1231877/*/
+	background-position: center center;
+	background-size: cover;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+}
+
+#homemain {
+	height: 100%;
+	width: 90%;
+	position: relative;
+	top: 120px;
+	margin: auto;
+	
+}
+
+#tagline {
+	text-align: center;
+	background-color: rgba(42, 46, 51, .45);
+	color: #A9B9CF;
+	font-family: "Roboto", sans-serif;
+	font-size: 1.75em;
+	border-radius: 25px;
+	margin-left: 15%;
+	margin-right: 15%;
+	margin-top: 30px;
+	margin-bottom: 30px;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+#home-content {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	text-align: center;
+}
+
+#homeleftimg, #homerightimg{
+	top: 0;
+	display: inline-block;
+	position: absolute;
+	width: 30%;
+	margin: 0;
+	padding: 0;
+	opacity: 0.75;
+}
+
+#homeleftimg{
+	left: 0;
+}
+
+#homerightimg{
+	right: 0;
+}
+
+#blurbbox {
+	display: inline-block;
+	top: 20%;
+	width: 40%;
+	background-color: #A9B9CF;
+	opacity: 0.75;
+	border-radius: 25px;
+	margin-top: 30px;
+}
+
+#blurb {
+	margin: 10px;
+	padding: 10px;
+	color: #000;
+	font-family: "Roboto", sand-serif;
+	font-size: 1.3em;
+	
+}
+
+
+/*		CONTACT	FORM		*/
+
+#headshot {
+	max-width: 20%;
+	margin-right: 10%;
+}
+
+form {
+	margin: auto;
+	padding: 2%;
+	width: 70%;
+	background: #6289BD;
+	position: relative;
+	border-radius: 25px;
+	text-align: left;
+}
+
+form label {
+	width: 100%;
+	display: block;
+	padding: 2%;
+}
+
+form label p {
+	display: block;
+	color: #000; 
+	font-size: 1em;
+	float: left;
+	width: 20%;
+	text-align: right;
+	padding: 1%;;
+}
+
+form .inputtext, .message {
+	background: #EEE;
+	border: none;
+}
+
+form .inputtext {
+	padding: 1%;
+	width: 50%;
+}
+
+form .message {
+	padding: 1%;
+	width: 75%;
+	overflow: auto;
+	height: 150px;
+}
+
+form .button {
+	margin: 5px;
+	padding: 5px;
+	background: #A9B9CF;
+	border: 0px;
+	position: relative;
+	left: 20%;
+	width: 100px;
+}
