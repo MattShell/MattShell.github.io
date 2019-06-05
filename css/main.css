@@ -1,9 +1,8 @@
 /* 
-ITECH 2003 A2 - Website Development
-Author: Matthew Shell - 30344209
+Author: Matthew Shell 
+Site name: Matthew Shell eResume
 
 This is the main stylesheet for my personal website
-Site name: Matthew Shell eResume
 */
 
 
@@ -68,6 +67,8 @@ nav ul {
     margin: 1px;
     padding: 0;
 	z-index: 2;
+	padding-left: 1em;
+	padding-right: 1em;
 }
 
 #navfirst {
@@ -121,6 +122,8 @@ nav a:hover {
     width: 100%;
     margin: 1px;
     padding: 0;
+	padding-left: 1em;
+	padding-right: 1em;
 }
 
 #nav2first {
